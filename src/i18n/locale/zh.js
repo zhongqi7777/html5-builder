@@ -102,7 +102,19 @@ export default {
       "line-height":"行高",
       "text-shadow":"文字阴影",
       "border-radius":"圆角",
-      "background-color":"背景色"
+      "background-color":"背景色",
+      "border-top-left-radius":"左上角",
+      "border-top-right-radius":"有上角",
+      "border-bottom-left-radius":"左下角",
+      "border-bottom-right-radius":"有下角",
+      border:"边框",
+      "border-width":"宽度",
+      "border-style":"样式",
+      "border-color":"颜色",
+      "box-shadow":'阴影',
+      background:"背景"
+
+
 
     }
   },
