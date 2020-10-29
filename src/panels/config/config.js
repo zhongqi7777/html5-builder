@@ -60,13 +60,13 @@ export default {
           togglable: 0,
           attributes: { title: 'Open Style Manager' }
         },
-        {
-          id: otm,
-          className: 'fa fa-cog',
-          command: otm,
-          togglable: 0,
-          attributes: { title: 'Settings' }
-        },
+        // {
+        //   id: otm,
+        //   className: 'fa fa-cog',
+        //   command: otm,
+        //   togglable: 0,
+        //   attributes: { title: 'Settings' }
+        // },
         {
           id: ola,
           className: 'fa fa-bars',

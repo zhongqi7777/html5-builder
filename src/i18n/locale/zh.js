@@ -31,8 +31,8 @@ export default {
     devices: {
       desktop: '桌面',
       tablet: '平板',
-      mobileLandscape: '移动 Landscape',
-      mobilePortrait: '移动 Portrait'
+      mobileLandscape: '移动 768px',
+      mobilePortrait: '移动 480px'
     }
   },
   panels: {
