@@ -50,9 +50,9 @@ export default {
     }
   },
   selectorManager: {
-    label: 'Classes',
-    selected: 'Selected',
-    emptyState: '- State -',
+    label: '类型',
+    selected: '请选择事件类型',
+    emptyState: '空',
     states: {
       hover: 'Hover',
       active: 'Click',
