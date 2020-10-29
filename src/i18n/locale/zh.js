@@ -78,7 +78,12 @@ export default {
       position:"定位",
       width:"宽度",
       height:"高度",
-      "max-width":"最小宽度"
+      "max-width":"最小宽度",
+      "min-height":"最小高度",
+      margin:"外边距",
+      padding:"内边距",
+      "margin-top":"上边距"
+
     }
   },
   traitManager: {
