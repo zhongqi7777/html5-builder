@@ -1,8 +1,8 @@
 {
   "name": "html5builder",
-  "description": "Free and Open Source Web Builder Framework",
-  "version": "0.10.12",
-  "author": "Artur Arseniev",
+  "description": "Html5 Builder Framework",
+  "version": "0.10.10",
+  "author": "ylb",
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/ylb/html5-editor",
   "main": "dist/html5-editor.min.js",
@@ -89,32 +89,12 @@
       "git add"
     ]
   },
-  "jest": {
-    "testURL": "http://localhost/",
-    "modulePaths": [
-      "./src"
-    ],
-    "testMatch": [
-      "<rootDir>/test/specs/**/*.js"
-    ],
-    "setupFiles": [
-      "<rootDir>/test/setup.js"
-    ],
-    "moduleNameMapper": {
-      "^jquery$": "cash-dom"
-    }
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "scripts": {
-    "docs": "vuepress dev docs",
-    "docs:api": "node docs/api.js",
-    "docs:build-vp": "vuepress build docs",
-    "docs:build": "npm run docs:api && npm run docs:build-vp",
-    "docs:deploy": "docs/deploy.sh",
     "lint": "eslint src",
     "check": "npm run lint && npm run test",
     "build": "npm run check && npm run v:patch && npm run build-dev && npm run build-prod",
@@ -128,8 +108,6 @@
     "start:css": "npm run build:css -- -w",
     "start:js": "webpack-dev-server --open --progress --colors",
     "stats": "webpack --env=prod --profile --json > stats.json && webpack-bundle-analyzer stats.json",
-    "format": "prettier --single-quote --write './{src,test}/**/*.js'",
-    "test": "jest",
-    "test:dev": "jest --watch"
+    "format": "prettier --single-quote --write './{src,test}/**/*.js'"
   }
 }
