@@ -75,6 +75,10 @@ export default {
     // The core library generates the name by their `property` name
     properties: {
       float: '浮动',
+      top:"上",
+      left:"左",
+      right:"有",
+      bottom:"下",
       position:"定位",
       width:"宽度",
       height:"高度",
@@ -82,7 +86,23 @@ export default {
       "min-height":"最小高度",
       margin:"外边距",
       padding:"内边距",
-      "margin-top":"上边距"
+      "margin-top":"上边距",
+      "margin-right":"有边距",
+      "margin-bottom":"下边距",
+      "margin-left":"左边距",
+      "padding-top":"上边距",
+      "padding-right":"有边距",
+      "padding-bottom":"下边距",
+      "padding-left":"左边距",
+      "font-family":"字体",
+      "font-size":"大小",
+      "font-weight":"字重",
+      "letter-spacing":"字间距",
+      color:"颜色",
+      "line-height":"行高",
+      "text-shadow":"文字阴影",
+      "border-radius":"圆角",
+      "background-color":"背景色"
 
     }
   },
