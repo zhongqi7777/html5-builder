@@ -84,7 +84,7 @@
     }
   },
   "lint-staged": {
-    "{src,test}/**/*.js": [
+    "{src}/**/*.js": [
       "prettier --single-quote --write",
       "git add"
     ]
@@ -96,7 +96,7 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "check": "npm run lint && npm run test",
+    "check": "npm run lint",
     "build": "npm run check && npm run v:patch && npm run build-dev && npm run build-prod",
     "build-n": "npm run check && npm run build:css && npm run build-prod",
     "build-dev": "webpack --env=dev && npm run build:css && npm run build:locale",
@@ -106,8 +106,6 @@
     "v:patch": "npm version --no-git-tag-version patch",
     "start": "run-p start:*",
     "start:css": "npm run build:css -- -w",
-    "start:js": "webpack-dev-server --open --progress --colors",
-    "stats": "webpack --env=prod --profile --json > stats.json && webpack-bundle-analyzer stats.json",
-    "format": "prettier --single-quote --write './{src,test}/**/*.js'"
+    "start:js": "webpack-dev-server --open --progress --colors"
   }
 }
