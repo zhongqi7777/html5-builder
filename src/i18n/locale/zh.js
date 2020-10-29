@@ -74,7 +74,11 @@ export default {
     },
     // The core library generates the name by their `property` name
     properties: {
-      // float: 'Float',
+      float: '浮动',
+      position:"定位",
+      width:"宽度",
+      height:"高度",
+      "max-width":"最小宽度"
     }
   },
   traitManager: {
